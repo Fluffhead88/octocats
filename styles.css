@@ -13,6 +13,8 @@ body {
   font-family: Helvetica, arial, sans-serif;
 }
 
+/* brings cats into a line and puts space between the borders  */
+
 .octocat {
   width: 31%;
   display: inline-block;
@@ -20,11 +22,22 @@ body {
   margin: 10px;
 }
 
+/* puts border around cats  */
+
 .octocat>a>img {
-  border: 1px solid grey;
+  border: 1px solid #CACACA;
 }
 
+/* .octocat>a>img {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+} */
+
 .authors {
+  list-style-type: none;
   display: inline-block;
   float: right;
   vertical-align: middle;
@@ -38,14 +51,15 @@ body {
 
 .image-footer {
   position: relative;
+  top: 10px;
 }
 
 .image-caption {
   text-align: right;
   right: 0;
-  color: grey;
+  color: #CACACA;
   position: absolute;
-  border-bottom: thin solid grey;
+  border-bottom: thin solid #CACACA;
   width: 100%;
   height: auto;
   display: inline-block;
@@ -53,12 +67,27 @@ body {
 
 .image-caption>a {
   text-decoration: none;
-  color: black;
+  color: #333333;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+/* style of "the" and "by" */
+
+.image-caption>span {
+  color: #777A85;
+  font-weight: bold;
+  font-size: 10pt;
 }
 
 .image-number {
-  color: grey;
+  color: #CACACA;
+  display: inline-block;
+  top: 2px;
 }
+
+/* adds # sign before image numbers */
 
 .image-number::before {
   content: "#";
