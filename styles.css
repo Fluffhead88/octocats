@@ -26,6 +26,25 @@ body {
   display: inline-block;
 }
 
-/* .image-footer {
-  color: red;
-} */
+.author>ul>li {
+  display: inline-block;
+}
+
+.image-footer {
+  position: relative;
+}
+
+.image-caption {
+  color: grey;
+  position: absolute;
+  border-bottom: 1px solid grey;
+}
+
+.image-number {
+  position: relative;
+  color: grey
+}
+
+.image-number::before {
+  content: "#";
+}
