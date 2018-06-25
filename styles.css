@@ -17,8 +17,11 @@ body {
   width: 31%;
   display: inline-block;
   float: left;
-  border: 1px solid grey;
   margin: 10px;
+}
+
+.octocat>a>img {
+  border: 1px solid grey;
 }
 
 .authors {
@@ -39,10 +42,12 @@ body {
 
 .image-caption {
   text-align: right;
+  right: 0;
   color: grey;
   position: absolute;
-  border-bottom: 1px solid grey;
-  margin-top: 30px;
+  border-bottom: thin solid grey;
+  width: 100%;
+  height: auto;
   display: inline-block;
 }
 
@@ -52,10 +57,7 @@ body {
 }
 
 .image-number {
-  text-align: left;
-  position: absolute;
   color: grey;
-  margin-top: 30px;
 }
 
 .image-number::before {
