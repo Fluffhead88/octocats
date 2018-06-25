@@ -14,20 +14,23 @@ body {
 }
 
 .octocat {
-  width: 33%;
+  width: 31%;
   display: inline-block;
   float: left;
   border: 1px solid grey;
-  padding: ;
+  margin: 10px;
 }
 
 .authors {
-  width: 15%;
   display: inline-block;
+  float: right;
+  vertical-align: middle;
 }
 
-.author>ul>li {
+.authors>li>a {
   display: inline-block;
+  vertical-align: middle;
+  width: 30px;
 }
 
 .image-footer {
@@ -35,14 +38,24 @@ body {
 }
 
 .image-caption {
+  text-align: right;
   color: grey;
   position: absolute;
   border-bottom: 1px solid grey;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.image-caption>a {
+  text-decoration: none;
+  color: black;
 }
 
 .image-number {
-  position: relative;
-  color: grey
+  text-align: left;
+  position: absolute;
+  color: grey;
+  margin-top: 30px;
 }
 
 .image-number::before {
