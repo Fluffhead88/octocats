@@ -18,35 +18,28 @@ body {
 .octocat {
   width: 31%;
   display: inline-block;
-  float: left;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 /* puts border around cats  */
 
-.octocat>a>img {
+.octocat>a {
   border: 1px solid #CACACA;
   border-radius: 5px;
   position: relative;
+  display: inline-block;
 }
 
-/* triangle at bottom of border - not working currently */
-
-.octocat>a>:after {
+.octocat>a::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: solid 10px #CACACA;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
   position: absolute;
-  width: 50px;
-  height: 50px;
-  border-top: 0px solid red;
-  border-right: 2px solid red;
-  border-bottom: 2px solid red;
-  border-left: 0px solid red;
+  right: 1%;
   top: 100%;
-  left: 50%;
-  margin-left: -25px;
-  content: '';
-  transform: rotate(45deg);
-  margin-top: -25px;
-  background: red;
 }
 
 .authors {
@@ -62,6 +55,10 @@ body {
   display: inline-block;
   vertical-align: middle;
   width: 24px;
+}
+
+.authors>li>a>img {
+  border-radius: 5px;
 }
 
 .image-footer {
