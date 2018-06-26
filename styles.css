@@ -46,7 +46,6 @@ body {
   list-style-type: none;
   display: inline-block;
   float: right;
-  vertical-align: middle;
   margin-left: -34px;
   margin-top: -2px;
 }
